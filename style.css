@@ -38,6 +38,7 @@
 
 
 #button{
+  font-size:medium;
     display: inline-block;
    color: var(--button-color);
     margin-right:50px ;
