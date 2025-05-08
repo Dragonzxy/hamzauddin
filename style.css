@@ -44,6 +44,7 @@
     border:solid 3px var(--button-color);
     border-radius: 10px;
    position: relative;
+   margin-top:10px ;
 }
 
 #button img{
