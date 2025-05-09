@@ -45,7 +45,7 @@
     border:solid 3px var(--button-color);
     border-radius: 10px;
    position: relative;
-   margin-top:10px ;
+   margin-top:1px ;
 }
 
 #button img{
@@ -77,6 +77,12 @@ header{
     padding: 10px;
 
     
+}
+header.nav a{
+  display:inline-block;
+  margin-top:10px;
+
+  
 }
 .logo{
     font-size: xx-large;
