@@ -2,7 +2,7 @@ let optionbtn = document.querySelector("#break-point");
 let navMobile = document.querySelector("#nav-mobile");
 optionbtn.addEventListener("click", e=>{
     e.preventDefault();
-if (e.target === document.body) {
+if (!e.target === navMobile) {
   navMenu.classList.toggle("show-nav-mobile" );
 }
     
