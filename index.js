@@ -2,6 +2,10 @@ let optionbtn = document.querySelector("#break-point");
 let navMobile = document.querySelector("#nav-mobile");
 optionbtn.addEventListener("click", e=>{
     e.preventDefault();
+if (e.target === document.body) {
+  navMenu.classList.toggle("show-nav-mobile" );
+}
+    
     navMobile.classList.toggle("show-nav-mobile")
     navMobile.classList.toggle("nav-mobile")
 })
