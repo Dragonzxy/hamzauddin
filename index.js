@@ -1,11 +1,3 @@
-
-Search within code
- 
-‎index.js
-+9
-Lines changed: 9 additions & 0 deletions
-Original file line number	Diff line number	Diff line change
-@@ -1,30 +1,39 @@
 let optionbtn = document.querySelector("#break-point");
 let navMobile = document.querySelector("#nav-mobile");
 optionbtn.addEventListener("click", e=>{
@@ -36,14 +28,15 @@ themeButton.forEach(btn =>{
 
 })
 
-document.addEventListener("click", function (event) {
-  const menu = document.querySelector(".toggle-menu"); // your menu selector
-  const toggleBtn = document.querySelector(".toggle-btn"); // your toggle button selector
+document.addEventListener("click", (e)=> {
+  const menu = document.querySelector("#nav-mobile"); // your menu selector
+  const toggleBtn = document.querySelector("#break-point"); // your toggle button selector
 
   // If click is NOT inside menu and NOT on the toggle button
-  if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
-    menu.classList.remove("active"); // or whatever class opens your menu
+  if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+    menu.classList.toggle("show-nav-mobile"); // or whatever class opens your menu
   }
 });
+
 
 
