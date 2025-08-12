@@ -18,12 +18,10 @@ themeButton.forEach(btn =>{
     e.preventDefault()
     body.classList.toggle("light-mode")
 
-    darkIcon.forEach(btn=>{
-     btn.classList.toggle("hide-icon") 
-    })
-    lightIcon.forEach(btn=>{
-     btn.classList.toggle("hide-icon") 
-    })
+    darkIcon.classList.toggle("hide-icon") 
+    
+    lightIcon.classList.toggle("hide-icon") 
+    
  })
 
 })
@@ -37,3 +35,4 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("active"); // or whatever class opens your menu
   }
 });
+
