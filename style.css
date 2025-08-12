@@ -294,7 +294,7 @@ footer h1{
 }
 .show-nav-mobile{
 transition:.3s ease;
-
+z-index:999;
     display: flex;
 
 
@@ -314,7 +314,7 @@ justify-content: center;
 
 .nav-mobile{
 display: flex;
-
+z-index:999;
 
     position: fixed;
 height: 100vh;
@@ -568,3 +568,4 @@ footer h4{
     font-size: small;
     color: darkgray;
 }
+
