@@ -65,13 +65,14 @@ function handleSwipe() {
   if (swipeDistance < -50) {
     // Swipe right → open menu
     navMobile.classList.add("show-nav-mobile");
-      navMobile.classList.remoce("nav-mobile")
+      navMobile.classList.remove("nav-mobile")
   } else if (swipeDistance > 50) {
     // Swipe left → close menu
     navMobile.classList.remove("show-nav-mobile")
       navMobile.classList.add("nav-mobile")
   }
 }
+
 
 
 
