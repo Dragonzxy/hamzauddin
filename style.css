@@ -179,7 +179,7 @@ footer {
 .break-point{
     color: var(--span-color);
     font-size: x-large;
-    display: none;
+    display: none; no
     cursor: pointer;
 
 }
@@ -285,7 +285,7 @@ footer h1{
        
     }
 .break-point{
-    display: block;z-index:999;
+    display: block;z-index:1099;
     
 
 }
@@ -568,5 +568,6 @@ footer h4{
     font-size: small;
     color: darkgray;
 }
+
 
 
