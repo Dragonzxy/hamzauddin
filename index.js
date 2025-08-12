@@ -28,16 +28,7 @@ themeButton.forEach(btn =>{
 
 })
 
-document.addEventListener("click", (e)=> {
-  const menu = document.querySelector("#nav-mobile"); // your menu selector
-  const toggleBtn = document.querySelector("#break-point"); // your toggle button selector
 
-  // If click is NOT inside menu and NOT on the toggle button
-  if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-    menu.classList.remove("show-nav-mobile");
- // or whatever class opens your menu
-  }
-});
 
 
 let startX = 0;
@@ -72,6 +63,7 @@ function handleSwipe() {
       navMobile.classList.add("nav-mobile")
   }
 }
+
 
 
 
