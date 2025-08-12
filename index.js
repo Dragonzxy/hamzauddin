@@ -1,8 +1,16 @@
+
+Search within code
+ 
+‎index.js
++9
+Lines changed: 9 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -1,30 +1,39 @@
 let optionbtn = document.querySelector("#break-point");
 let navMobile = document.querySelector("#nav-mobile");
 optionbtn.addEventListener("click", e=>{
     e.preventDefault();
-    
+
     navMobile.classList.toggle("show-nav-mobile")
     navMobile.classList.toggle("nav-mobile")
 })
@@ -18,10 +26,12 @@ themeButton.forEach(btn =>{
     e.preventDefault()
     body.classList.toggle("light-mode")
 
-    darkIcon.classList.toggle("hide-icon") 
-    
-    lightIcon.classList.toggle("hide-icon") 
-    
+    darkIcon.forEach(btn=>{
+     btn.classList.toggle("hide-icon") 
+    })
+    lightIcon.forEach(btn=>{
+     btn.classList.toggle("hide-icon") 
+    })
  })
 
 })
@@ -35,4 +45,5 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("active"); // or whatever class opens your menu
   }
 });
+
 
