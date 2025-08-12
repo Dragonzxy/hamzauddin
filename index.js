@@ -28,3 +28,12 @@ themeButton.forEach(btn =>{
 
 })
 
+document.addEventListener("click", function (event) {
+  const menu = document.querySelector(".toggle-menu"); // your menu selector
+  const toggleBtn = document.querySelector(".toggle-btn"); // your toggle button selector
+
+  // If click is NOT inside menu and NOT on the toggle button
+  if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+    menu.classList.remove("active"); // or whatever class opens your menu
+  }
+});
