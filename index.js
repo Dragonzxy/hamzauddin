@@ -59,7 +59,7 @@ document.addEventListener("touchend", (e) => {
 });
 
 function handleSwipe() {
-  const navMobile = document.getElementById("navMobile");
+  const navMobile = document.getElementById("nav-mobile");
   const swipeDistance = endX - startX;
 
   if (swipeDistance > 50) {
@@ -72,5 +72,6 @@ function handleSwipe() {
       navMobile.classList.toggle("nav-mobile")
   }
 }
+
 
 
