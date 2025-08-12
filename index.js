@@ -34,8 +34,8 @@ document.addEventListener("click", (e)=> {
 
   // If click is NOT inside menu and NOT on the toggle button
   if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-    menu.classList.toggle("show-nav-mobile");
-     navMobile.classList.toggle("nav-mobile")  // or whatever class opens your menu
+    menu.classList.remove("show-nav-mobile");
+     navMobile.classList.remove("nav-mobile")  // or whatever class opens your menu
   }
 });
 
@@ -72,6 +72,7 @@ function handleSwipe() {
       navMobile.classList.add("nav-mobile")
   }
 }
+
 
 
 
