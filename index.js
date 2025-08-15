@@ -28,7 +28,12 @@ themeButton.forEach(btn =>{
 
 })
 
-
+document.addEventListener("click", e=>{
+    e.preventDefault();
+if(!e.target.contains===navMobile){
+    navMobile.classList.remove("show-nav-mobile")}
+    
+})
 
 
 // let startX = 0;
@@ -63,6 +68,7 @@ themeButton.forEach(btn =>{
 //       navMobile.classList.add("nav-mobile")
 //   }
 // }
+
 
 
 
