@@ -28,13 +28,7 @@ themeButton.forEach(btn =>{
 
 })
 
-document.addEventListener("click", e=>{
-    e.preventDefault();
-if(!navMobile.contains(e.target) && !optionbtn.contains(e.target)){
-    navMobile.classList.remove("show-nav-mobile"}
-    navMobile.classList.add("nav-mobile"}
-    
-})
+
 
 
 // let startX = 0;
@@ -69,6 +63,7 @@ if(!navMobile.contains(e.target) && !optionbtn.contains(e.target)){
 //       navMobile.classList.add("nav-mobile")
 //   }
 // }
+
 
 
 
